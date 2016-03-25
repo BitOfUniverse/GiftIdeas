@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
+gem 'pg'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
