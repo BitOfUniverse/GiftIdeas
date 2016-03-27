@@ -17,7 +17,7 @@ $ ->
 
   $prev = $('#prev')
   $next = $('#next')
-  console.log($('#next').text())
+
   $prev.click ->
     getIdea(-1)
 
