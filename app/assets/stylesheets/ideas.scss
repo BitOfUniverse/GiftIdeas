@@ -1,3 +1,46 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.idea-wrapper {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}
+
+#idea {
+  font-size: 6em;
+}
+
+
+.control-button {
+  height: 100%;
+  background: #def;
+  font-size: 10em;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+
+}
+
+#next {
+  @extend  .control-button;
+
+  &:after {
+    content: ">";
+  }
+}
+
+#prev {
+  @extend  .control-button;
+
+  &:after {
+    content: '<';
+  }
+}
