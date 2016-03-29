@@ -34,7 +34,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 gem 'pg'
 
-gem 'react-rails'
+gem 'react-rails', github: 'reactjs/react-rails', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
