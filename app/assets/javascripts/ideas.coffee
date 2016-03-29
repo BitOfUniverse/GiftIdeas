@@ -5,10 +5,8 @@
 $ ->
   offset = 0
 
-  ideaReactComponent = ReactDOM.render(React.createElement(Idea), $('#idea_wrapper')[0])
-
   callback = (data)->
-    ideaReactComponent.setProps(data: data[0])
+    ReactDOM.render(React.createElement(Idea, {data: data[0]}), $('#idea_wrapper')[0])
 
   getIdea = (change)->
     offset = if (offset + change) > 0 then offset + change else 0
