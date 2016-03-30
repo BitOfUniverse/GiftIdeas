@@ -17,19 +17,19 @@ var IdeaViewer = React.createClass({
 
     getIdea: function(change) {
         var offset = Math.max(this.state.offset + (change || 0), 0);
-
         params = {offset: offset};
+
         $.getJSON('/api/ideas', params).then(function(data){
             this.updateIdeas(data, offset);
         }.bind(this));
     },
 
     _leftControl: function () {
-        return (<div className="col-sm-2" id="prev"/>);
+        return (<div className="col-sm-2" onClick={this.getIdea.bind(this, -1)}/>);
     },
 
     _rightControl: function () {
-        return (<div className="col-sm-2" id="next"/>);
+        return (<div className="col-sm-2" onClick={this.getIdea.bind(this, +1)}/>);
     },
 
     _idea: function () {

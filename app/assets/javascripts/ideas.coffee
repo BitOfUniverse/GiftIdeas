@@ -6,12 +6,3 @@ $ ->
   ideas_viewer = React.createElement(IdeaViewer)
   react_ideas_viewer = ReactDOM.render(ideas_viewer, $('#react_ideas_viewer')[0])
 
-  $prev = $('#prev')
-  $next = $('#next')
-
-  $prev.click ->
-    react_ideas_viewer.getIdea(-1)
-
-  $next.click ->
-    react_ideas_viewer.getIdea(+1)
-
