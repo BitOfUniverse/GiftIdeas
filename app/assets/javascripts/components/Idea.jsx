@@ -25,11 +25,11 @@ var IdeaViewer = React.createClass({
     },
 
     _leftControl: function () {
-        return (<div className="col-sm-2" onClick={this.getIdea.bind(this, -1)}/>);
+        return (<div className="col-sm-2" id="prev" onClick={this.getIdea.bind(this, -1)}/>);
     },
 
     _rightControl: function () {
-        return (<div className="col-sm-2" onClick={this.getIdea.bind(this, +1)}/>);
+        return (<div className="col-sm-2" id="next" onClick={this.getIdea.bind(this, +1)}/>);
     },
 
     _idea: function () {
@@ -67,7 +67,10 @@ var Idea = React.createClass({
 
     render: function () {
         return (
+            <div>
             <h1 id="idea">{this.props.data.title}</h1>
+            <h4>{this.props.data.description}</h4>
+            </div>
         );
     }
 });
