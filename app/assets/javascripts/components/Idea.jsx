@@ -20,7 +20,7 @@ var IdeaViewer = React.createClass({
         params = {offset: offset};
 
         $.getJSON('/api/ideas', params).then(function(data){
-            this.updateIdeas(data, offset);
+            this.updateIdeas(data['records'], offset);
         }.bind(this));
     },
 
