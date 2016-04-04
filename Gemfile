@@ -36,7 +36,6 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'pg'
 
 gem 'react-rails', github: 'reactjs/react-rails', branch: 'master'
-gem 'redux'
 gem "js-routes"
 
 group :development, :test do
