@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-define('boot', function () {
+define('application/boot', function () {
     function runner() {
         // All scripts must live in app/assets/javascripts/views/_controller_name_/_action_name_.es6.
         var path = $('body').data('route');
