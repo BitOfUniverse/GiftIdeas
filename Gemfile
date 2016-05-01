@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
+gem 'react-rails'
+
 gem 'pg'
 
 gem "js-routes"
