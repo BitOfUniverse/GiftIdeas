@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require components
-//= require boot
-//= require views
-//= require_self
-
+//= require turbolinks
+//= require react
+//= require react_ujs
+//= require_tree ./components
+//= require_tree ./views
+//= require init
